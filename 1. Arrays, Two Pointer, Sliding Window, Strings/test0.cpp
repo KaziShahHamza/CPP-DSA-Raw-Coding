@@ -3,14 +3,6 @@
 #include <climits>
 using namespace std;
 
-// void hello() {
-//     cout << "Hello Hamza" << endl;
-// }
-
-// float area(float a, float b) {
-//     return a * b;
-// }
-
 
 
 int main() {
