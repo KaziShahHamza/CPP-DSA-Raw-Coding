@@ -3,8 +3,13 @@
 using namespace std;
 
 int main() {
+    cout << endl;
+    cout << "--- Output Starts Here ---" << endl;
+    cout << endl;
+
     int arr[] = {12, 5, 4, 7, 10, 9, 3, 10};
     int size = sizeof(arr) / sizeof(arr[0]);
+
 
     int k = 3, sum = 0, max = -100000, min = 100000, target = 21, c = 0, idx = -1, c2 = 0, idx2 = 0;
 
@@ -51,5 +56,8 @@ int main() {
     cout << "minimum: " << min << endl;
     
     cout << endl;
+    cout << "--- Outptut Ends Here ---" << endl;
+    cout << endl;
+
     return 0;
 }
