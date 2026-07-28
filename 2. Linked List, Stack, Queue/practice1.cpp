@@ -8,11 +8,11 @@ struct Node {
     Node *next;
 };
 
-bool search (Node *head1, int key1) {
-    Node *current = head1;
+bool search (Node *head, int key) {
+    Node *current = head;
 
     while(current != nullptr) {
-        if(current->data == key1){
+        if(current->data == key){
             return true;
         }
 
