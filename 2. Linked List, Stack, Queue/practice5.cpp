@@ -1,4 +1,4 @@
-// Topic Name: 
+// Topic Name: reverse
 
 #include <iostream>
 using namespace std;
@@ -18,17 +18,19 @@ void traverse(Node *head) {
     }
 } 
 
-void reverse(Node* head) {
+void reverse(Node*& head) {
     Node* prev = nullptr;
     Node* curr = head;
     Node* next = nullptr;
 
     while(curr != nullptr) {
-        curr->next = next;
-        curr->next = nullptr;
-        curr = prev;
         next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
     }
+
+    head = prev;
 }
 
 int main() {
@@ -61,7 +63,7 @@ int main() {
     traverse(head);
     cout << endl;
 
-
+    reverse(head);
 
     cout << "All nodes: ";
     traverse(head);
