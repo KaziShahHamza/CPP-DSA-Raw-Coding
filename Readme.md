@@ -1,9 +1,9 @@
-### all the files in this repo were raw coded by me including this readme file.
+### All the files in this repo are raw coded.
 
-### No codes were generated using llm's, copilot, agents in these files.
+### No codes were generated using llm's, copilot, agents.
 
-### all the solutions are in brute force. after writing bruute-force solutions, llm's were used to learn optimal solutions, from O(n^2) to O(n).
+### I learned the topics, practiced, implimented and tested in my local storage and pused here.
 
-### all the files were coded in VSCODE. 
+### The solutions are in brute force. after writing bruute-force solutions, llm's were used to learn optimal solutions, from O(n^2) to O(n).
 
-### i used some snippets to get instant templates for main function, loops, basic array, array size.
+### I used some snippets to get instant templates for main function, loops, basic array, array size.
