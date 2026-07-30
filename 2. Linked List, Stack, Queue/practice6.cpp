@@ -1,4 +1,4 @@
-// Topic Name: Stack
+// Topic Name: Array Stack implimantation
 
 #include <iostream>
 using namespace std;
@@ -44,6 +44,29 @@ public:
         arr[++topIndex] = value;
     }
 
+    int size() {
+        return topIndex + 1;
+    }
+
+    int clear() {
+        return topIndex = -1;
+    }
+
+    void display() {
+        for (int i = topIndex; i >= 0; i--) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+
+    bool search(int value) {
+        for (int i = topIndex; i >= 0; i--) {
+            if (value == arr[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 };
 
@@ -60,31 +83,50 @@ int main() {
     st.push(40);
     st.push(50);
 
+    cout << "Size: " << st.size() << endl;
+
     if (st.isFull()) cout << "Full." << endl;
     else cout << "Not Full." << endl;
     // cout << st.isFull() << endl;
+    
+    // cout << st.isEmpty() << endl;
+    
+    for (int i = 1; i <= 5; i++) {
+        st.push(i*100);
+    }
+    
+    cout << "Size: " << st.size() << endl;
+    cout << "Top: " << st.top() << endl;
 
     cout << st.top() << endl;
     st.pop();
     cout << "after pop" << endl;
     cout << st.top() << endl;
+
+    cout << endl;
+    st.display();
+    cout << endl;
+
+    int value = 200;
+
+    if(st.search(value)) {
+        cout << "Found: " << endl;
+    } else cout << "Not Found" << endl;
+    
+    // while(!st.isEmpty()) {
+        //     cout << st.top() << " ";
+        //     st.pop();
+        // }
+    // cout << endl;
+
+    // cout << st.isEmpty() << endl;
+    st.clear();
+    
+    cout << "Size: " << st.size() << endl;
     
     if (st.isEmpty()) cout << "Empty." << endl;
     else cout << "Not Empty." << endl;
-    // cout << st.isEmpty() << endl;
 
-    for (int i = 1; i < 5; i++) {
-        st.push(i*100);
-    }
-
-    cout << st.top() << endl;
-
-    while(!st.isEmpty()) {
-        cout << st.top() << " ";
-        st.pop();
-    }
-    cout << endl;
-    cout << st.isEmpty() << endl;
     
     cout << endl;
     cout << "--- Output Ends Here ---" << endl;
