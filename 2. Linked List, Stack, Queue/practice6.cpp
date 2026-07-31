@@ -41,7 +41,8 @@ public:
             return;
         }
 
-        arr[++topIndex] = value;
+        topIndex++;
+        arr[topIndex] = value;
     }
 
     int size() {
