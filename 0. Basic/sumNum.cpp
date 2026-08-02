@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    int n;    
+    int n = 1011;    
     int digit, rev = 0, c = 0, sum = 0; 
-    cin >> n;
+    // cin >> n;
 
     // int num = n;
 
