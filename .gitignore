@@ -1,0 +1,8 @@
+# Ignore everything by default
+*
+
+# But allow source files and assets to be tracked
+!*.cpp
+!*.h
+!*.png
+!.gitignore
