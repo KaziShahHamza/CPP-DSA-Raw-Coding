@@ -1,8 +1,15 @@
 # VS Code
 .vscode/
 
-# Compiled object/binary files
-*.exe
-*.out
+# Build folders
+build/
+
+# Object files
 *.o
 *.obj
+
+# Windows executables
+*.exe
+
+# Linux/macOS executables
+*.out

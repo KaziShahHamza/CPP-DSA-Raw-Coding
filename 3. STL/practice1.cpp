@@ -11,10 +11,10 @@ int main() {
     
     string s = "i am good";
 
-    s.push_back('. ok ok');
+    s.push_back('!');
 
 
-    
+    cout << s << endl;
     
     cout << endl;
     cout << "--- Output Ends Here ---" << endl;

@@ -12,6 +12,7 @@ void traverse(Node *head) {
     if(head == nullptr) return;
 
     Node* curr = head;
+    
     while(curr != nullptr) {
         cout << curr->data << " ";
         curr = curr->next;
