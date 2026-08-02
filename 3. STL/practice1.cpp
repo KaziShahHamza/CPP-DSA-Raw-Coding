@@ -1,4 +1,4 @@
-// Topic Name: vector
+// Topic Name: string
 
 #include <iostream>
 using namespace std;
