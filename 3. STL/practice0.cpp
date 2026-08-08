@@ -16,7 +16,7 @@ int main() {
     vector<bool> v5;
     vector<string> v6;
     
-    cout << "v3 loop: " << " ";
+    cout << "v3 loop: ";
     for(int x:v3) {
         cout << x << " ";
     }
@@ -24,12 +24,12 @@ int main() {
     cout << endl;
     cout << endl;
     
-    cout << "v2 loop: " << " ";
+    cout << "v2 loop: ";
     for (int x:v2) {
         cout << x << " ";
     }
     cout << endl;
-    cout << "v size: " << v.size() << endl;
+    cout << "v2 size: " << v2.size() << endl;
     
     v.push_back(1);
     v.push_back(2);
@@ -41,13 +41,14 @@ int main() {
     cout << "v2[2]: " << v2[2] << endl;
     
     
-    cout << "front: " << v2.front() << endl;
-    cout << "back: " << v2.back() << endl;
+    cout << "v2 front: " << v2.front() << endl;
+    cout << "v2 back: " << v2.back() << endl;
     
-    cout << "empty: " << v.empty() << endl;
+    cout << "v empty: " << v.empty() << endl;
     cout << "v size: " << v.size() << endl;
     cout << endl;
     
+    cout << "v output: ";
     for (int x:v) {
         cout << x << " ";
     }
@@ -56,7 +57,7 @@ int main() {
     v.pop_back();
     v.pop_back();
     
-    cout << "range loop: " << " ";
+    cout << "range loop: ";
     for (int x:v) {
         cout << x << " ";
     }
@@ -65,14 +66,14 @@ int main() {
     v[0] = 10;
     v.erase(v.begin() + 2);
     
-    cout << "for loop: " << " ";
+    cout << "for loop: ";
     for (int i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
     cout << endl;
     
     cout << endl;
-    cout << "v3 loop: " << " ";
+    cout << "v3 loop: ";
     for(int x:v3) {
         cout << x << " ";
     }

@@ -15,7 +15,10 @@ int main() {
 
     if(s == s2) cout << "matched." << endl;
     else cout << "no match." << endl;
-
+    
+    int pos = s3.find("code");
+    cout << "position: " << pos << endl;
+    
     cout << "original: " << s3 << endl;
     sort(s3.begin(), s3.end());
     cout << "reverse: " << s3 << endl;
@@ -24,12 +27,10 @@ int main() {
     cout << "original: " << s3 << endl;
     reverse(s3.begin(), s3.end());
     cout << "reverse: " << s3 << endl;
-
+    
     
     string s4 = s3.substr(2, 6);
-
-    int pos = s3.find("code");
-    cout << "position: " << pos << endl;
+    
     
     cout << s4 << endl;
     
