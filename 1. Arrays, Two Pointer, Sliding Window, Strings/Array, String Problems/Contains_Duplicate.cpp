@@ -8,8 +8,7 @@ int main() {
     cout << "--- Output Starts Here ---" << endl;
     cout << endl;
     
-    
-    int arr[] = {1, 5, 3, 7, 4, 3, 8, 3, 9, 4};
+    int arr[] = {1, 5, 3, 7, 4, 3, 8};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     int freq[size] = {};
